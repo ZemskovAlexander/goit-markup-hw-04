@@ -162,17 +162,7 @@ color: var(--accent-color);
   background-size: 10px 16px ;
 } */
 
-.contact-top > li {
-  display: inline-flex;
-}
 
-.contact-top {
-  margin-left: auto;
-}
-
-.contact-top .item + .item {
-  margin-left: 50px;
-}
 
 .contact-nav .contact {
 color: var(--primary-text-color);
@@ -205,10 +195,41 @@ letter-spacing: 0.02em;
 padding-top: 32px;
 padding-bottom: 32px;
 }
-.contact-top .contact:hover,
-.contact-top .contact:focus { 
-color: var(--accent-color);
+
+.contact-top>li {
+  display: inline-flex;
 }
+
+.contact-top {
+  margin-left: auto;
+}
+
+.contact-top .item+.item {
+  margin-left: 50px;
+}
+
+.social-top {
+display: inline-flex;
+align-items: center;
+cursor: pointer;
+border: none;
+background-color: var(--primary-bg-color);
+color: var(--primary-text-color);
+}
+
+.icon {
+  fill: currentColor;
+  padding-right: 10px;
+}
+
+.social-top:hover,
+.social-top .contact:hover,
+.social-top:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+}
+
+/* Hero */
 
 .hero {
 text-align: center;
@@ -392,6 +413,7 @@ img {
   
 }
 
+
 /* Кнопки соц. сетей */
 
 .social {
@@ -410,6 +432,7 @@ img {
 .social:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);  
 }
 
 .social-icon {
