@@ -190,6 +190,7 @@ a {
 .contact-top .contact {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -603,6 +604,11 @@ footer {
   font-family: inherit;
   border-color: var(--accent-color);
   border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 
   font-style: 400;
   font-weight: 500;
@@ -642,6 +648,11 @@ footer {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   border-color: transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* Набор услуг */
@@ -678,6 +689,10 @@ footer {
   /* width: calc(100% - 40px) / 3; */
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.flex-element:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .flex-cont {
