@@ -76,24 +76,6 @@ a {
 
 /* Main nav */
 
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-right: auto;
-  margin-left: auto;
-  outline: 1px solid black;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/background.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -245,6 +227,23 @@ a {
 .hero {
   text-align: center;
   background-color: var(--hero-bg-color);
+  max-width: 1600px;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -257,8 +256,6 @@ a {
   text-transform: uppercase;
 
   width: 696px;
-  padding-top: 200px;
-  padding-left: 452px;
   margin-top: 0px;
   margin-bottom: 30px;
 }
@@ -428,6 +425,9 @@ img {
 
 .social {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   border: none;
   width: 44px;
@@ -457,6 +457,8 @@ img {
 
 .social:hover,
 .social:focus {
+  align-items: center;
+  justify-content: center;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -656,11 +658,20 @@ footer {
 }
 
 .element {
+  align-items: center;
+  justify-content: center;
+
   padding: 20px 24px 20px 24px;
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-element {
