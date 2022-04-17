@@ -186,7 +186,6 @@ a {
 
 .contact-top {
   margin-left: auto;
-  display: flex;
 }
 
 .contact-top .item + .item {
